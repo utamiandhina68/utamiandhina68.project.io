@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Hunter Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Ghost Hunter Game</h1>
+        <button id="start-button">Start Game</button>
+        <div id="score-board">
+            <span>Score: </span><span id="score">0</span>
+        </div>
+        <div id="timer-board">
+            <span>Time: </span><span id="timer">30</span> seconds
+        </div>
+        <div id="level-board">
+            <span>Level: </span><span id="level">1</span>
+        </div>
+        <div id="game-area">
+            <div id="ghost"></div>
+        </div>
+        <div id="message" style="display: none;"></div>
+        <img id="jumpscare" src="jumpscare-image.jpeg" style="display: none;" />
+        <button id="restart-button" style="display: none;">Reload Game</button> <!-- Tombol Reload -->
+
+    </div>
+    <audio id="background-music" src="background-music.mp3" loop></audio>
+    <audio id="ghost-sound" src="ghost-sound.mp3"></audio>
+    <audio id="jumpscare-sound" src="jumpscare-sound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
